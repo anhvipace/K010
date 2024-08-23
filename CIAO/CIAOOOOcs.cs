@@ -4,19 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework   
+
 namespace CIAO
 {
     [TestFixture]
-    public class Class1
+    internal class CIAOOOOcs
     {
         [Test]
         public void Test()
         {
-            Console.WriteLine("ACE handsome");
-            
-
+            Console.WriteLine("ACE12");
         }
-
     }
 }
