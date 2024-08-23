@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace CIAO
 {
     public class Class1
-    {
+    {   
+        public Class1() { }
     }
 }
