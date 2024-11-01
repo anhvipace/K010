@@ -4,16 +4,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework   
+ 
 namespace CIAO
 {
     [TestFixture]
-    public class Class1
+
+    public class ToanTu
     {
         [Test]
         public void Test()
         {
-            Console.WriteLine("ACE handsome");
+            int x = 100;
+            int y = 3;
+            double sum = x / y; 
+
+            Console.WriteLine("haha"+sum);
             
 
         }

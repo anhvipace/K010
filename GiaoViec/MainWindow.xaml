@@ -1,0 +1,28 @@
+﻿<Window x:Class="GiaoViec.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GiaoViec"
+        mc:Ignorable="d"
+        Title="Phần mềm của Hoàng Anh" Height="450" Width="802">
+    <Window.Background>
+        <ImageBrush ImageSource="/f7cbefaa3eb1467b38265f5afd0106be.jpg" Stretch="Fill" TileMode="None"/>
+    </Window.Background>
+    <Grid Margin="10,0,0,0" RenderTransformOrigin="0.544,0.486" HorizontalAlignment="Left" Width="391">
+        <Grid.OpacityMask>
+            <ImageBrush ImageSource="/f7cbefaa3eb1467b38265f5afd0106be.jpg"/>
+        </Grid.OpacityMask>
+        <Grid.Background>
+            <ImageBrush ImageSource="/f7cbefaa3eb1467b38265f5afd0106be.jpg"/>
+        </Grid.Background>
+        <Button Content="Oke" HorizontalAlignment="Left" Margin="274,63,0,0" VerticalAlignment="Top" Height="35" Width="50" Click="Button_Click"/>
+        <Calendar HorizontalAlignment="Left" Margin="543,176,0,0" VerticalAlignment="Top"/>
+        <Calendar HorizontalAlignment="Left" Margin="543,176,0,0" VerticalAlignment="Top"/>
+        <Label>
+            <Label Content="Tên mình là Hoàng Anh"/>
+        </Label>
+
+
+    </Grid>
+</Window>
