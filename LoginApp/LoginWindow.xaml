@@ -1,0 +1,59 @@
+﻿<Window x:Class="LoginApp.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="450" Width="500"
+        Background="#2D2D30"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None">
+
+    <Grid Margin="20">
+        <!-- Logo ứng dụng -->
+        <Image Source="logo.png" Width="100" Height="100" HorizontalAlignment="Center" Margin="0,10,0,20"/>
+
+        <!-- Tiêu đề -->
+        <TextBlock Text="Welcome to Diroot" FontSize="28" Foreground="White" 
+                   HorizontalAlignment="Center" Margin="0,100,0,0" FontWeight="Bold"/>
+
+        <!-- Hướng dẫn đăng nhập -->
+        <TextBlock Text="Vui lòng nhập tên đăng nhập và mật khẩu của bạn." 
+                   FontSize="14" Foreground="#A0A0A0" HorizontalAlignment="Center"
+                   Margin="0,140,0,0"/>
+
+        <!-- Hộp nhập Tên đăng nhập -->
+        <Border Background="#3E3E42" CornerRadius="5" Margin="0,170,0,0" Height="40">
+            <TextBox x:Name="txtUsername" Margin="10,0" VerticalAlignment="Center" 
+                     Background="Transparent" BorderThickness="0" Foreground="White" 
+                     FontSize="14" PlaceholderText="Tên đăng nhập" />
+        </Border>
+
+        <!-- Hộp nhập Mật khẩu -->
+        <Border Background="#3E3E42" CornerRadius="5" Margin="0,230,0,0" Height="40">
+            <PasswordBox x:Name="txtPassword" Margin="10,0" VerticalAlignment="Center" 
+                         Background="Transparent" BorderThickness="0" Foreground="White" 
+                         FontSize="14" PlaceholderText="Mật khẩu" />
+        </Border>
+
+        <!-- Nút Đăng nhập -->
+        <Button Content="Đăng nhập" Height="40" Margin="0,290,0,0" Width="150" 
+                VerticalAlignment="Top" HorizontalAlignment="Center"
+                Background="#007ACC" Foreground="White" FontSize="16" 
+                BorderBrush="Transparent" Click="BtnLogin_Click"
+                Cursor="Hand" />
+
+        <!-- Nút Quên mật khẩu và Tạo tài khoản -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,350,0,0">
+            <Button Content="Quên mật khẩu?" Background="Transparent" Foreground="#A0A0A0" 
+                    BorderBrush="Transparent" FontSize="12" Cursor="Hand" Click="BtnForgotPassword_Click"/>
+            <TextBlock Text=" | " Foreground="#A0A0A0" FontSize="12"/>
+            <Button Content="Tạo tài khoản" Background="Transparent" Foreground="#A0A0A0" 
+                    BorderBrush="Transparent" FontSize="12" Cursor="Hand" Click="BtnCreateAccount_Click"/>
+        </StackPanel>
+
+        <!-- Nút Thoát -->
+        <Button Content="X" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                Background="Transparent" Foreground="White" BorderBrush="Transparent"
+                FontSize="14" FontWeight="Bold" Click="BtnClose_Click"
+                Cursor="Hand" />
+    </Grid>
+</Window>
