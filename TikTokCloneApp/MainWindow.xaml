@@ -1,0 +1,16 @@
+﻿<Window x:Class="TikTokCloneApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TikTok Clone App" Height="450" Width="800">
+    <Grid>
+        <!-- MediaElement để phát video -->
+        <MediaElement Name="videoPlayer" LoadedBehavior="Manual" Width="600" Height="400" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <!-- Nút điều khiển -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30">
+            <Button Content="Play" Click="OnPlayClicked" Margin="5"/>
+            <Button Content="Pause" Click="OnPauseClicked" Margin="5"/>
+            <Button Content="Stop" Click="OnStopClicked" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
